@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,14 +18,14 @@ const Hero = () => {
             </p>
 
             <div className="mt-4 md:mt-8">
-              <div class="flex h-[40px] text-[14px] text-white/60">
+              <div className="flex h-[40px] text-[14px] text-white/60">
                 <input
-                  class="input w-[200px] bg-white text-black px-3 py-1 rounded-l-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
+                  className="input w-[200px] bg-white text-black px-3 py-1 rounded-l-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
                   name="text"
                   type="text"
                   placeholder="Enter your work email"
                 />
-                <button class="text-black px-3 py-1 bg-emerald-500 rounded-r-lg border-y border-r border-r-white/10 border-y-white/10 hover:bg-emerald-800/40 transition-all duration-150 easy-in-out">
+                <button className="text-black px-3 py-1 bg-emerald-500 rounded-r-lg border-y border-r border-r-white/10 border-y-white/10 hover:bg-emerald-800/40 transition-all duration-150 easy-in-out">
                   Send
                 </button>
               </div>
@@ -34,13 +33,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <video
-          src="src\assets\hero-video.mp4"
-          autoPlay
-          loop
-          muted
-          className="rounded-4xl p-4 "
-        ></video>
+        <video autoPlay loop muted className="rounded-4xl p-4 ">
+          <source src="src\assets\hero-video.mp4" />
+        </video>
       </section>
     </div>
   );
