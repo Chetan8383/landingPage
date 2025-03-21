@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div>
-      <section className="h-screen flex flex-col sm:grid sm:grid-cols-2 sm:items-center bg-[url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-fixed bg-center text-white flex items-center justify-center">
+      <section className="relative h-screen flex flex-col sm:grid sm:grid-cols-2 sm:items-center bg-[url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-fixed bg-center text-white flex items-center justify-center">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl ">
@@ -35,11 +35,11 @@ const Hero = () => {
         </div>
 
         <video
-          src="src\assets\hero video.mp4"
+          src="src\assets\hero-video.mp4"
           autoPlay
           loop
           muted
-          className="rounded-4xl p-4"
+          className="rounded-4xl p-4 "
         ></video>
       </section>
     </div>
